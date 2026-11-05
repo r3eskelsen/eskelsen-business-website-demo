@@ -1,0 +1,21 @@
+LAB-11 RELEASE LOOPBACK HTTP SMOKE — 2026-11-05
+Python 3.13.5
+Working copy: extracted original public review candidate
+HTTP server: temporary 127.0.0.1 loopback only
+SQLite: temporary isolated synthetic DB, removed after tests
+RESULT: 13/13 PASS
+PASS GET /
+PASS GET /services
+PASS GET /about
+PASS GET /contact
+PASS GET /static/style.css
+PASS GET /static/app.js
+PASS GET health
+PASS valid synthetic POST /api/leads
+PASS local SQLite persistence
+PASS server rejects no consent
+PASS honeypot returns benign response
+PASS invalid/honeypot not inserted
+PASS unknown page returns 404
+No production services or live customer information used.
+This does NOT constitute a browser navigation or screen-reader accessibility audit.

@@ -1,0 +1,136 @@
+{
+  "source_archive": "eskelsen-business-website-demo.zip",
+  "source_sha256": "020238259ed9494f5af11d27d13378caa99207b8471cb1eaa88de24d10ccf671",
+  "environment": "Linux sandbox Python 3.13.5 Chromium 144.0.7559.96",
+  "browser_localhost_navigation": "BLOCKED_BY_ADMINISTRATOR (navigation blocked); browser uses unmodified inlined CSS/JS and controlled fetch bridge, not direct browser HTTP",
+  "tests": [
+    {
+      "test": "T01-T09 pytest isolated",
+      "pass": true,
+      "detail": "........                                                                 [100%]\n8 passed in 0.28s\n"
+    },
+    {
+      "test": "Backend local boot and health",
+      "pass": true,
+      "detail": "server startup on isolated 127.0.0.1; GET /api/health"
+    },
+    {
+      "test": "HTTP 200 /",
+      "pass": true,
+      "detail": "3588"
+    },
+    {
+      "test": "HTTP 200 /services",
+      "pass": true,
+      "detail": "2650"
+    },
+    {
+      "test": "HTTP 200 /about",
+      "pass": true,
+      "detail": "2316"
+    },
+    {
+      "test": "HTTP 200 /contact",
+      "pass": true,
+      "detail": "3385"
+    },
+    {
+      "test": "HTTP 404 unknown route",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "Actual CSS served",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "Actual JS served",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "Internal navigation href targets resolve",
+      "pass": true,
+      "detail": "4 unique links; broken=[]"
+    },
+    {
+      "test": "Chromium engine available",
+      "pass": true,
+      "detail": "144.0.7559.96"
+    },
+    {
+      "test": "M02 4 pages x 3 viewport widths no horizontal clipping",
+      "pass": true,
+      "detail": "375, 768, 1440 px; 12 Chromium screenshots"
+    },
+    {
+      "test": "Semantic landmarks and skip link across pages",
+      "pass": true,
+      "detail": "h1 main nav and skip on all 12 renders"
+    },
+    {
+      "test": "M01 initial Tab focuses skip link",
+      "pass": true,
+      "detail": "{'href': '#main', 'top': '12px', 'outline': 'solid'}"
+    },
+    {
+      "test": "M01 form reachable with Tab",
+      "pass": true,
+      "detail": "[{'tag': 'A', 'name': None, 'text': 'E.\\nESKELSEN\\nLAB / 11', 'outline': 'solid'}, {'tag': 'A', 'name': None, 'text': 'Home', 'outline': 'solid'}, {'tag': 'A', 'name': None, 'text': 'Services', 'outline': 'solid'}, {'tag': 'A', 'name': None, 'text': 'About', 'outline': 'solid'}, {'tag': 'A', 'name': None, 'text': 'Contact', 'outline': 'solid'}, {'tag': 'A', 'name': None, 'text': 'Start a conversation \u2197', 'outline': 'solid'}, {'tag': 'INPUT', 'name': 'name', 'text': '', 'outline': 'solid'}, {'tag': 'INPUT', 'name': 'email', 'text': '', 'outline': 'solid'}, {'tag': 'SELECT', 'name': 'service', 'text': 'Select a service\\nBusiness websit', 'outline': 'solid'}, {'tag': 'TEXTAREA', 'name': 'message', 'text': '', 'outline': 'solid'}, {'tag': 'INPUT', 'name': 'consent', 'text': '', 'outline': 'solid'}, {'tag': 'BUTTON', 'name': None, 'text': 'Submit demo request \u2197', 'outline': 'solid'}, {'tag': 'BODY', 'name': None, 'text': 'Skip to content\\nE.\\nESKELSEN\\nLAB ', 'outline': 'none'}, {'tag': 'A', 'name': None, 'text': 'Skip to content', 'outline': 'solid'}]"
+    },
+    {
+      "test": "M01 focus indicator visible",
+      "pass": true,
+      "detail": "[{'tag': 'BODY', 'name': None, 'text': 'Skip to content\\nE.\\nESKELSEN\\nLAB ', 'outline': 'none'}]"
+    },
+    {
+      "test": "M01 labels and required fields",
+      "pass": true,
+      "detail": "[{'name': 'name', 'connected': True, 'required': True}, {'name': 'email', 'connected': True, 'required': True}, {'name': 'service', 'connected': True, 'required': True}, {'name': 'message', 'connected': True, 'required': True}, {'name': 'consent', 'connected': True, 'required': True}]"
+    },
+    {
+      "test": "M01 live status region",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "M01 invalid form accessible error",
+      "pass": true,
+      "detail": "Check the highlighted fields and try again."
+    },
+    {
+      "test": "Browser form -> real HTTP backend -> SQLite using bridge",
+      "pass": true,
+      "detail": "db rows 0 -> 1; UI Demo request saved locally. No message or email was sent."
+    },
+    {
+      "test": "Valid form resets on success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "M03 simulated offline fetch -> honest error no persistence",
+      "pass": true,
+      "detail": "1->1; Network error. Request was not confirmed. Please retry carefully."
+    },
+    {
+      "test": "Browser simulated 503 displays honest error",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "Website title and main navigation present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "Original package extracted without .env / private DB / .venv",
+      "pass": true,
+      "detail": "clean source extraction"
+    }
+  ],
+  "total": 25,
+  "passed": 25,
+  "failed": 0
+}

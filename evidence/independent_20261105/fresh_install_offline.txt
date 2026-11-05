@@ -1,0 +1,10 @@
+Verifier-local absolute path redacted; diagnostic message otherwise preserved.
+Using Python 3.13.5 environment at: [temporary isolated verifier virtual environment]
+  × No solution found when resolving dependencies:
+  ╰─▶ Because fastapi was not found in the cache and you require
+      fastapi>=0.115,<1, we can conclude that your requirements are
+      unsatisfiable.
+
+      hint: Packages were unavailable because the network was disabled. When
+      the network is disabled, registry packages may only be read from the
+      cache.

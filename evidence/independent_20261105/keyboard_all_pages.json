@@ -1,0 +1,58 @@
+[
+  {
+    "viewport": 375,
+    "page": "index",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  },
+  {
+    "viewport": 375,
+    "page": "services",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  },
+  {
+    "viewport": 375,
+    "page": "about",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  },
+  {
+    "viewport": 375,
+    "page": "contact",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  },
+  {
+    "viewport": 1440,
+    "page": "index",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  },
+  {
+    "viewport": 1440,
+    "page": "services",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  },
+  {
+    "viewport": 1440,
+    "page": "about",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  },
+  {
+    "viewport": 1440,
+    "page": "contact",
+    "first_tab": "#main",
+    "second_tab": "Eskelsen Lab home",
+    "pass": true
+  }
+]
